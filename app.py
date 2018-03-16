@@ -15,7 +15,8 @@ def inspect(path):
         txt += '{}: {}\n'.format(k, v)
     txt += '=== data ===\n'
     txt += '{}\n'.format(request.data)
-    return Response(txt, mimetype='text/plain')
+    headers = {'Server': 'github.com/cxmcc/webinspect'}
+    return Response(txt, headers=headers, mimetype='text/plain')
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=8080)

@@ -7,6 +7,8 @@ docker run -p 8080:8080 cxmcc/webinspect
 ```
 
 ## Example Output
+
+* Visit from browser
 ```
 === path ===
 /
@@ -23,6 +25,20 @@ Accept-Language: en-US,en;q=0.9
 Accept-Encoding: gzip, deflate, br
 === cookies ===
 cookiename: cookievalue
+=== data ===
+
+```
+
+* curl
+```
+$ curl localhost:8080
+=== path ===
+/
+=== headers ===
+User-Agent: curl/7.47.0
+Host: localhost:8080
+Accept: */*
+=== cookies ===
 === data ===
 
 ```

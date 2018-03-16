@@ -6,12 +6,12 @@ app = Flask(__name__)
 def inspect(path):
     txt = ''
     txt += '=== path ===\n'
-    txt += '{}\n'.format(path)
+    txt += '/{}\n'.format(path)
     txt += '=== headers ===\n'
     for k, v in request.headers:
         txt += '{}: {}\n'.format(k, v)
     txt += '=== cookies ===\n'
-    for k, v in request.cookies:
+    for k, v in request.cookies.items():
         txt += '{}: {}\n'.format(k, v)
     txt += '=== data ===\n'
     txt += '{}\n'.format(request.data)

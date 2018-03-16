@@ -1,2 +1,2 @@
-# demoweb
-Simple web server for debugging purpose.
+# webinspect 
+Simple web server for inspecting incoming HTTP requests

@@ -12,6 +12,8 @@ docker run -p 8080:8080 cxmcc/webinspect
 ```
 === path ===
 /
+=== remote_address ===
+127.0.0.1
 === headers ===
 Cookie: cookiename=cookievalue
 User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36
@@ -34,6 +36,8 @@ cookiename: cookievalue
 $ curl localhost:8080
 === path ===
 /
+=== remote_address ===
+127.0.0.1
 === headers ===
 User-Agent: curl/7.47.0
 Host: localhost:8080

@@ -7,6 +7,8 @@ def inspect(path):
     txt = ''
     txt += '=== path ===\n'
     txt += '/{}\n'.format(path)
+    txt += '=== remote_address ===\n'
+    txt += '{}\n'.format(request.remote_addr)
     txt += '=== headers ===\n'
     for k, v in request.headers:
         txt += '{}: {}\n'.format(k, v)

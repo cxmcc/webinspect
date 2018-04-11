@@ -38,7 +38,6 @@ curl http://localhost:8080/ --header "Cookie: cookiename=cookievalue" --header "
 * curl
 ```
 $ curl localhost:8080
-$ curl localhost:8080
 === path ===
 /
 === method===

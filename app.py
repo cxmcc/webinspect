@@ -16,7 +16,7 @@ def gen_curl_command(path):
 def inspect(path):
     txt = ''
     txt += '=== path ===\n'
-    txt += '/{}\n'.format(path)
+    txt += '/{}\n'.format(request.path)
     txt += '=== method===\n'
     txt += request.method + '\n'
     txt += '=== remote_address ===\n'
